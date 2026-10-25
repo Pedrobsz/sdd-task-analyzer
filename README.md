@@ -81,3 +81,29 @@ sdd-task-analyzer/
 O desenvolvimento foi auxiliado por IA e verificado com testes automatizados. As regras de contexto exigem revisão humana, restrição de dependências, logs sem identificadores, ausência de persistência e aderência ao SDD. O [relatório técnico](docs/relatorio_governanca_etica.pdf) apresenta riscos, decisões de projeto e evidências disponíveis, distinguindo validação local de CI/Docker ainda não comprovados.
 
 **Entrega AVA:** repositório público com workflow verificado, relatório técnico PDF e link de apresentação técnica no YouTube (aproximadamente 5 minutos).
+
+
+## Homologação Técnica - Fase 3
+
+A aplicação TaskAnalyzer foi submetida a testes automatizados e validações de infraestrutura.
+
+### Testes Locais
+- 65 testes executados com Pytest.
+- 65 testes aprovados.
+- Resultado: `65 passed`.
+
+### Integração Contínua (CI/CD)
+- Workflow configurado no GitHub Actions.
+- Execução automática realizada após o push na branch `main`.
+- Resultado do workflow: aprovado.
+
+### Containerização com Docker
+- Imagem construída utilizando Docker.
+- Testes executados em ambiente containerizado.
+- Resultado: `65 passed in 0.85s`.
+- Código de saída: `0`.
+
+### Homologação
+As verificações realizadas confirmaram a aprovação dos testes automatizados nos ambientes local e Docker, além da execução bem-sucedida do workflow de integração contínua.
+
+Data da validação: 25/10/2026.
